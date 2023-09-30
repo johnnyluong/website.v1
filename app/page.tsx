@@ -103,12 +103,12 @@ export default function Home() {
                 of the largest pharmaceutical companies in the world.
               </p>
               <p className="mb-4 text-lg text-slate-300">
-                I'm currently focused on improving my software engineering skill
+                I&apos;m currently focused on improving my software engineering skill
                 set and developing my ability to find solutions to real world
                 problems through software.
               </p>
               <p className="text-lg text-slate-300">
-                When I'm not busy building something cool, you can find me
+                When I&apos;m not busy building something cool, you can find me
                 playing tennis, listening to podcasts, or improving my strength
                 at the gym.
               </p>
