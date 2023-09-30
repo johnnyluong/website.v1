@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    // TODO: fix nav link highlighting via scroll, content description, BC credit, deployment, const extraction
+    // TODO: fix nav link highlighting via scroll, content description, BC credit, assign to swe.johnnyluong.com, const extraction
     
     <div className="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-albert md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
