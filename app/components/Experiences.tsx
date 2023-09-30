@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React from "react";
 
 const experiences = [
   {
     role: "Lead Software Developer",
     company: "BluePath Solutions",
     url: "https://bluepathsolutions.com",
-    prevRoles: ["Software Developer"],
+    prevRoles: ["previously, Software Developer"],
     dateRange: "Apr 2021 - Present",
     technologies: [
       "React",
@@ -18,10 +18,7 @@ const experiences = [
       "HTML / CSS",
       "Adobe XD",
     ],
-    links: [
-      { title: "Sample Link 1", link: "https://google.com" },
-      { title: "Sample Link 2", link: "https://google.com" },
-    ],
+    links: [],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -80,7 +77,22 @@ const Experiences = () => {
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden roudned md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
                   {e.role} ·
-                  <span className="inline-block">&nbsp;{e.company}</span>
+                  <span className="inline-block">
+                    &nbsp;{e.company}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="inline-block h-5 w-5 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
                 </span>
               </a>
             </div>

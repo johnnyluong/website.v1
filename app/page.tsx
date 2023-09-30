@@ -1,12 +1,13 @@
 import NavLink from "./components/NavLink";
 import SocialMediaLink from "./components/SocialMediaLink";
 import Experiences from "./components/Experiences";
+import Projects from "./components/Projects";
 
 
 
 export default function Home() {
   return (
-    // TODO: fix nav link highlighting via scroll
+    // TODO: fix nav link highlighting via scroll, content description, BC credit, deployment, const extraction
     
     <div className="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-albert md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
@@ -146,78 +147,10 @@ export default function Home() {
             id="projects"
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
           >
-            <div className="sticky top-0 z-20 -mx-6 mb-4 text-lg w-screen bg-background/75 px-6 py-5 backdrop-blur-sm md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-              <h2 className="text-sm uppercase font-bold tracking-widest text-slate-200 lg:sr-only">
-                Projects
-              </h2>
-            </div>
-            <div>
-              <p className="mb-4 text-lg">this is the projects section</p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="mb-4 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
 
-            <div className="mt-12">
-              <a className="inline-flex items-center text-lg font-medium leading-tight text-slate-200 group" href="/archive" target="_blank">
-                <span>
-                  <span className="border-b border-transparent pb-px text-slate-400 transition group-hover:border-blue-300 group-hover:text-blue-200 motion-reduce:transition-none">
-                    View Project Archive
-                  </span>
-                  <span className="whitespace-nowrap">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                      ></path>
-                    </svg>
-                  </span>
-                </span>
-              </a>
-            </div>
+            <Projects></Projects>
+
+            
           </section>
           <footer className="max-w-md pb-12 text-lg text-slate-500 sm:pb-0">
             <p>Built using Next.js and Tailwind CSS, deployed on Vercel. All text content is set with the Inter typeface. Designed by Brittany Chiang.</p>

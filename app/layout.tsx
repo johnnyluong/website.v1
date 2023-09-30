@@ -2,8 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Albert_Sans, Inter } from 'next/font/google'
 
-const font = Albert_Sans({ subsets: ['latin'], variable: '--font-albert-sans' })
-// const font = Inter({ subsets: ['latin'] })
+const albert = Albert_Sans({ subsets: ['latin'], variable: '--font-albert-sans' })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Johnny Luong',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth'>
-      <body className={`${font.variable} font-albert`}>{children}</body>
+      <body className={`${albert.variable} font-albert`}>{children}</body>
     </html>
   )
 }
