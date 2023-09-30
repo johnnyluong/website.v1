@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --deg: 1;
+  --x: -50%;
+  --y: -50%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +16,9 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 5, 21, 31;
     --background-end-rgb: 5, 21, 31;
+    --deg: 1;
+    --x: -50%;
+    --y: -50%
   }
 }
 
