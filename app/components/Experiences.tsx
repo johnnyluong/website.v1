@@ -16,6 +16,7 @@ const experiences = [
       "Docker",
       "JavaScript",
       "HTML / CSS",
+      "Adobe XD",
     ],
     links: [
       { title: "Sample Link 1", link: "https://google.com" },
@@ -71,7 +72,7 @@ const Experiences = () => {
           <h3 className="font-medium leading-snug">
             <div>
               <a
-                className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-sky-300 focus-visible:text-sky-300 group/link text-lg"
+                className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-sky-300 focus-visible:text-sky-300 group/link text-lg tracking-wide"
                 href={e.url}
                 target="_blank"
                 rel="noreferrer"
