@@ -81,9 +81,9 @@ const Experiences = () => {
               >
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
-                  {e.role} ·
+                  {e.role} ·{" "}
                   <span className="inline-block">
-                    &nbsp;{e.company}
+                    {e.company}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"

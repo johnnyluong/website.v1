@@ -120,7 +120,7 @@ export default function Home() {
               <Experiences></Experiences>
               <div className="mt-12">
                 <a
-                  className="inline-flex items-center text-lg font-medium leading-tight text-slate-200 group"
+                  className="inline-flex items-center font-medium leading-tight text-slate-200 group"
                   href="/Johnny_Luong_Resume.pdf"
                   target="_blank"
                 >
