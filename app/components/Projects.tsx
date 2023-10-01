@@ -54,7 +54,7 @@ const Projects = () => {
                     aria-hidden="true"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                       clipRule="evenodd"
                     ></path>
@@ -68,7 +68,7 @@ const Projects = () => {
 
             <ul className="mt-2 flex flex-wrap">
                 {/* TODO: fix case when there are no sublinks */}
-              {e.links.map((item, index) => (
+              {e.links.length > 0 && e.links.map((item, index) => (
                 <li className="mr-4 mb-1" key={index}>
                   <a className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300">
                     <svg
@@ -81,7 +81,7 @@ const Projects = () => {
                       <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
                       <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
                     </svg>
-                    {/* <span>{item.title}</span> */}
+                    <span>{item?.title}</span>
                   </a>
                 </li>
               ))}
