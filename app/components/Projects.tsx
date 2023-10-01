@@ -40,15 +40,15 @@ const Projects = () => {
           className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-3 sm:translate-y-1"
         ></Image>
         <div className="z-10 sm:col-span-7 sm:order-2">
-          <h3 className="font-medium leading-snug">
+          <h3 className="font-medium leading-tight">
             <div>
               <a
-                className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-sky-300 focus-visible:text-sky-300 group/link text-lg tracking-wide"
+                className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-sky-300 focus-visible:text-sky-300 group/link text-base tracking-wide"
                 href={e.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="absolute -inset-x-4 -inset-y-2.5 hidden roudned md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
                   {e.title}
                   <svg
@@ -67,12 +67,11 @@ const Projects = () => {
                 </span>
               </a>
             </div>
-            <p className="mt-2 text-med leading-normal text-slate-300">
+            <p className="mt-2 text-sm leading-normal text-slate-300">
               {e.description}
             </p>
             {e.links.length > 0 ? (
               <ul className="mt-2 flex flex-wrap">
-                {/* TODO: fix case when there are no sublinks */}
                 {e.links.map((item, index) => (
                   <li className="mr-4 mb-1" key={index}>
                     <a className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300">
@@ -98,7 +97,7 @@ const Projects = () => {
             <ul className="mt-2 flex flex-wrap">
               {e.technologies.map((item, index) => (
                 <li className="mr-1.5 mt-2" key={index}>
-                  <div className="flex items-center rounded-full bg-blue-400/20 px-4 py-1.5 text-blue-300 leading-5 text-med font-medium">
+                  <div className="flex items-center rounded-full bg-blue-400/20 px-4 py-1.5 text-blue-300 leading-5 text-xs font-medium">
                     {item}
                   </div>
                 </li>

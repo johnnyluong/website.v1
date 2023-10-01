@@ -3,23 +3,21 @@ import SocialMediaLink from "./components/SocialMediaLink";
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
 
-
-
 export default function Home() {
   return (
     // TODO: fix nav link highlighting via scroll, content description, BC credit, assign to swe.johnnyluong.com, const extraction
-    
+
     <div className="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-albert md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <div>
-            <h1 className="text-5xl font-bold tracking-tight text-slate-200 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
               Johnny Luong
             </h1>
-            <h2 className="text-2xl font-medium tracking-tight mt-6">
+            <h2 className="text-lg font-medium tracking-tight mt-3 text-slate-300 sm:text-xl">
               Lead Software Developer at BluePath Solutions
             </h2>
-            <p className="text-lg text-slate-400 mt-6 max-w-xs leading-normal">
+            <p className="text-slate-400 mt-4 max-w-xs leading-normal">
               I enjoy learning new things and building cool products for people
               to use.
             </p>
@@ -90,7 +88,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="-my-4">
-              <p className="mb-4 text-lg text-slate-300">
+              <p className="mb-4 text-slate-300">
                 My journey started in 2017 at the University of California, San
                 Diego, where I earned my Bachelors of Science in
                 Mathematics-Computer Science. Being surrounded by incredibly
@@ -103,9 +101,9 @@ export default function Home() {
                 of the largest pharmaceutical companies in the world.
               </p>
               <p className="mb-4 text-lg text-slate-300">
-                I&apos;m currently focused on improving my software engineering skill
-                set and developing my ability to find solutions to real world
-                problems through software.
+                I&apos;m currently focused on improving my software engineering
+                skill set and developing my ability to find solutions to real
+                world problems through software.
               </p>
               <p className="text-lg text-slate-300">
                 When I&apos;m not busy building something cool, you can find me
@@ -120,7 +118,11 @@ export default function Home() {
           >
             <Experiences></Experiences>
             <div className="mt-12">
-              <a className="inline-flex items-center text-lg font-medium leading-tight text-slate-200 group" href="/Johnny_Luong_Resume.pdf" target="_blank">
+              <a
+                className="inline-flex items-center text-lg font-medium leading-tight text-slate-200 group"
+                href="/Johnny_Luong_Resume.pdf"
+                target="_blank"
+              >
                 <span>
                   <span className="border-b border-transparent pb-px text-slate-400 transition group-hover:border-blue-300 group-hover:text-blue-200 motion-reduce:transition-none">
                     View Résumé
@@ -147,13 +149,35 @@ export default function Home() {
             id="projects"
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
           >
-
             <Projects></Projects>
-
-            
           </section>
-          <footer className="max-w-md pb-12 text-lg text-slate-500 sm:pb-0">
-            <p>Built using Next.js and Tailwind CSS, deployed on Vercel. All text content is set with the Inter typeface. Designed by Brittany Chiang.</p>
+          <footer className="max-w-md pb-12 text-sm text-slate-500 sm:pb-0">
+            <p>
+              Built using{" "}
+              <a
+                href="https://nextjs.org/"
+                className="font-medium text-slate-400 hover:text-sky-300 focus-visible:text-sky-300"
+              >
+                Next.js 13
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://tailwindcss.com/"
+                className="font-medium text-slate-400 hover:text-sky-300 focus-visible:text-sky-300"
+              >Tailwind CSS</a>
+              , deployed on <a
+                href="https://vercel.com/"
+                className="font-medium text-slate-400 hover:text-sky-300 focus-visible:text-sky-300"
+              >Vercel</a>. All text content is set with the
+              Inter typeface. Design language by{" "}
+              <a
+                href="https://brittanychiang.com"
+                className="font-medium text-slate-400 hover:text-sky-300 focus-visible:text-sky-300"
+              >
+                Brittany Chiang
+              </a>
+              .
+            </p>
           </footer>
         </main>
       </div>
