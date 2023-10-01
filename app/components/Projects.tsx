@@ -1,13 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
+interface Link {
+    title: string;
+    link: string;
+}
+
 const projects = [
   {
     title: "fullstack.dev",
     url: "https://graphcms-blog-one-black.vercel.app/",
     technologies: ["React", "Next JS", "TypeScript", "GraphQL", "Tailwind CSS"],
     image: "/fullstackdev.png",
-    links: [],
+    links: [] as Link[],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -16,7 +21,7 @@ const projects = [
     url: "https://jluong.dev/",
     technologies: ["React", "Gatsby JS", "JavaScript"],
     image: "/website-v1.png",
-    links: [],
+    links: [] as Link[],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -65,27 +70,30 @@ const Projects = () => {
             <p className="mt-2 text-med leading-normal text-slate-300">
               {e.description}
             </p>
-
-            <ul className="mt-2 flex flex-wrap">
+            {e.links.length > 0 ? (
+              <ul className="mt-2 flex flex-wrap">
                 {/* TODO: fix case when there are no sublinks */}
-              {e.links.length > 0 && e.links.map((item, index) => (
-                <li className="mr-4 mb-1" key={index}>
-                  <a className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="mr-1 h-3 w-3"
-                      aria-hidden="true"
-                    >
-                      <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                      <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                    </svg>
-                    <span>{item?.title}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+                {e.links.map((item, index) => (
+                  <li className="mr-4 mb-1" key={index}>
+                    <a className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="mr-1 h-3 w-3"
+                        aria-hidden="true"
+                      >
+                        <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
+                        <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
+                      </svg>
+                      <span>{item.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div></div>
+            )}
 
             <ul className="mt-2 flex flex-wrap">
               {e.technologies.map((item, index) => (

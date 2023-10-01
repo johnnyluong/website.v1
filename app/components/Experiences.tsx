@@ -1,5 +1,10 @@
 import React from "react";
 
+interface Link {
+  title: string;
+  link: string;
+}
+
 const experiences = [
   {
     role: "Lead Software Developer",
@@ -18,7 +23,7 @@ const experiences = [
       "HTML / CSS",
       "Adobe XD",
     ],
-    links: [],
+    links: [] as Link[],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -29,7 +34,7 @@ const experiences = [
     prevRoles: [],
     dateRange: "Jul 2020 - Dec 2020",
     technologies: ["Flutter", "Dart", "Firebase"],
-    links: [],
+    links: [] as Link[],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -40,7 +45,7 @@ const experiences = [
     prevRoles: [],
     dateRange: "Jun 2020 - sep 2020",
     technologies: ["Python", "Java", "JavaFX"],
-    links: [],
+    links: [] as Link[],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -51,7 +56,7 @@ const experiences = [
     prevRoles: [],
     dateRange: "Jun 2019 - sep 2019",
     technologies: ["Python", "Java"],
-    links: [],
+    links: [] as Link[],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
