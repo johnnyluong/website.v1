@@ -176,8 +176,15 @@ export default function Home() {
               >
                 Vercel
               </a>
-              . All text content is set with the Inter typeface. Design language
-              by{" "}
+              . All text content is set with the{" "}
+              <a
+                href="https://fonts.google.com/specimen/Albert+Sans"
+                target="_blank"
+                className="font-medium text-slate-400 hover:text-sky-300 focus-visible:text-sky-300"
+              >
+                Albert Sans
+              </a>{" "}
+              typeface. Design language by{" "}
               <a
                 href="https://brittanychiang.com"
                 target="_blank"

@@ -8,19 +8,10 @@ interface Link {
 
 const projects = [
   {
-    title: "fullstack.dev",
+    title: "GraphQL Powered Blog: fullstack.dev",
     url: "https://graphcms-blog-one-black.vercel.app/",
     technologies: ["React", "Next JS", "TypeScript", "GraphQL", "Tailwind CSS"],
     image: "/fullstackdev.png",
-    links: [] as Link[],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  },
-  {
-    title: "jluong.dev",
-    url: "https://jluong.dev/",
-    technologies: ["React", "Gatsby JS", "JavaScript"],
-    image: "/website-v1.png",
     links: [] as Link[],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
