@@ -65,7 +65,7 @@ const Projects = () => {
               <ul className="mt-2 flex flex-wrap">
                 {e.links.map((item, index) => (
                   <li className="mr-4 mb-1" key={index}>
-                    <a className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300">
+                    <a href={item.link} target="_blank" className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
