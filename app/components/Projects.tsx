@@ -97,7 +97,7 @@ const Projects = () => {
             <ul className="mt-2 flex flex-wrap">
               {e.technologies.map((item, index) => (
                 <li className="mr-1.5 mt-2" key={index}>
-                  <div className="flex items-center rounded-full bg-blue-400/20 px-4 py-1.5 text-blue-300 leading-5 text-xs font-medium">
+                  <div className="flex items-center rounded-full bg-blue-400/20 px-3.5 py-1.5 text-blue-300 leading-5 text-xs font-medium">
                     {item}
                   </div>
                 </li>
